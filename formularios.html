@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários HTML</title>
+</head>
+<body>
+    
+    <main>
+
+        <h1>Formulário</h1>
+        <hr>
+
+        <form action="" method="">  <!-- para que os dados sejam enviados após preencher-->
+
+            <div>
+                <label for="texto"> Nome: </label>  <!-- label é para identificar o campo no formulário-->
+                <input type="text" id="texto" placeholder="Informe o seu nome" name="nome"> <!-- input é para inserir dados no formulário e o id tem que ter o mesmo nome do label criado-->
+                <!--placeholder é uma sugestão de preenchimento-->
+                <!--name é a tag que vai carregar os dados inseridos no formulário para o Javascript-->
+            </div>
+
+            <div>
+                <label for="senha"> Senha: </label> 
+                <input type="password" id="senha" name="senha">
+            </div>
+
+            <div>
+                <label for="email"> E-mail: </label> 
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="data"> Data de Nascimento:</label> 
+                <input type="date" id="data" name="data">
+            </div>
+
+            <div>
+                <label for="hora"> Horario:</label> 
+                <input type="time" id="hora" name="hora">
+            </div>
+
+            <div>
+                <label for="qualquer"> Numero:</label> 
+                <input type="number" id="qualquer" name="qualquer">
+            </div>
+
+            <div>
+                <label for="enviar"> </label> 
+                <input type="submit" id="enviar" name="enviar">
+            </div>
+
+
+            <textarea name="bio" id="bio" cols="30" rows="10"> </textarea>  <!--caixa de texto livre-->
+
+            <div>
+                <select name="select" id="select"> <!--caixa de opções para selecionar-->
+                    <option value="" disabled selected>Selecione uma das opções...</option>
+                    <option value="alimento">Alimento</option>
+                    <option value="roupa">Roupa</option>
+                    <option value="transferencia">Transferência</option>
+                </select>
+            </div>
+
+        </form>
+
+    </main>
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    
+<main>
+
+    <h1>Tabelas no HTML</h1>
+
+    <section id="students">
+
+        <h2> Tabela de alunos </h2>
+
+        <table border="20"> <!--o border é a borda da tabela-->
+
+            <thead> <!--cabeçalho da tabela-->
+                <tr> <!--linha da tabela-->
+                    <th>Nome</th> <!--usa-se th para inserir os dados do cabeçalho-->
+                    <th>E-mail</th>
+                    <th>Matrícula</th>
+                </tr>
+            </thead>
+
+            <tbody><!--corpo da tabela-->
+                <tr>
+                    <td> Marcos </td> <!--usa-se td para inserir os dados do corpo-->
+                    <td>marcos@gmail.com </td>
+                    <td>10511374</td>
+                </tr>
+                <tr>
+                    <td> Tony </td> 
+                    <td>tony@gmail.com </td>
+                    <td>43567901</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </section>
+
+    <section id="finance">
+        <h2> Tabela de controle financeiro </h2>
+        <table border="1">
+            <thead> 
+                <tr> 
+                    <th>Data</th> 
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2"> 11/09/24 </td> <!--Rowspan mescla linhas na tabela (se fosse colunas seria "colspan")-->
+                    <td> Almoço </td>
+                    <td> R$ 78,00 </td>
+                </tr>
+                <tr> 
+                    <td> Roupas </td>
+                    <td> R$ 450,00 </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+</body>
+</html>
